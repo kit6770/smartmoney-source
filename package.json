@@ -1,0 +1,30 @@
+{
+  "name": "smartmoney-source",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "gh-pages -d out -b main --nojekyll -r https://github.com/kit6770/smartmoney.git",
+    "predeploy": "npm run build"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "latest",
+    "classnames": "latest",
+    "gh-pages": "latest",
+    "next": "latest",
+    "postcss": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sharp": "latest",
+    "swr": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.4",
+    "@types/react": "19.0.9",
+    "typescript": "5.7.3"
+  }
+}
