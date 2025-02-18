@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import GlobalContextProvider from "./app-context";
 
 const sans = Montserrat({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -8,8 +9,8 @@ const sans = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "MoonTrade AI",
-  description: "MoonTrade AI",
+  title: "Smart Money",
+  description: "Smart Money",
 };
 
 export default function RootLayout({
