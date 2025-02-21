@@ -1,50 +1,24 @@
 import { Input, Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { Avatar, Divider } from "@mui/material";
+import { EventEmitter } from 'events'
 import Link from "next/link";
 import React from "react";
 import { Treemap, ResponsiveContainer } from "recharts";
 import { formatAmount } from "./components/format";
+import { useEventEmitter } from "./hooks/useEventEmitter";
+import rank from './token/rank-data.json'
 
 type Props = {};
 
-const data = [
-  {
-    name: "axis",
-    children: [{ name: "Axes1", size: 15 }],
-  },
-  {
-    name: "axis",
-    children: [{ name: "Axes1", size: 15 }],
-  },
-  {
-    name: "axis",
-    children: [{ name: "Axes1", size: 15 }],
-  },
-  {
-    name: "axis2",
-    children: [{ name: "Axes2", size: 6 }],
-  },
-  {
-    name: "axis3",
-    children: [{ name: "Axes4", size: 6 }],
-  },
-  {
-    name: "axis2",
-    children: [{ name: "Axes2", size: 6 }],
-  },
-  {
-    name: "axis3",
-    children: [{ name: "Axes4", size: 6 }],
-  },
-  {
-    name: "axis2",
-    children: [{ name: "Axes2", size: 6 }],
-  },
-  {
-    name: "axis3",
-    children: [{ name: "Axes4", size: 6 }],
-  },
-];
+const data1 = rank.data.rank.splice(0, 10).map(d=>{
+  return {
+    name: d.symbol,
+    token: d,
+    children: [{size: Math.ceil((Math.random()*100))}]
+  }
+}).sort((a, b)=>{
+  return b.children[0].size - a.children[0].size
+})
 
 // menu time type
 export type MenuTimeType = "15m" | "30m" | "1h" | "6h" | "12h" | "24h";
@@ -200,7 +174,7 @@ export const TreeMapChart = (props: Props) => {
       <div className="w-full h-[360px]">
         <ResponsiveContainer width="100%" height="100%">
           <Treemap
-            data={data}
+            data={data1}
             dataKey="size"
             stroke="transparent"
             fill="#8884d8"
@@ -213,9 +187,10 @@ export const TreeMapChart = (props: Props) => {
 };
 
 const CustomizedContent = (props: any) => {
+  const emitter = useEventEmitter()
   const { root, depth, x, y, width, height, index, payload, rank, name } =
     props;
-
+  const {token} = root
   return (
     <g>
       <rect
@@ -233,21 +208,26 @@ const CustomizedContent = (props: any) => {
 
       <foreignObject x={x} y={y} width={width} height={height}>
         {/* <div className=" absolute top-0 bottom-0 left-0 right-0 opacity-80" style={{
-            backgroundImage: `url(https://dd.dexscreener.com/ds-data/tokens/solana/HtrpQFrrd6hefsbAMifWibPetY4Kd8pjTbX7Wxmjpump.png?size=lg&key=df2ab7)`,
+            backgroundImage: `url(${token?.logo})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
-        }} /> */}
-        <Link className="w-full h-full" href={"/"}>
+            opacity:0.3
+        }} onClick={()=>{
+          emitter.emit('openTokenDrawer', {token})
+        }}/> */}
+        <div className="w-full h-full cursor-pointer" onClick={()=>{
+          emitter.emit('openTokenDrawer', {token})
+        }} >
           <div className="flex flex-col">
             <div className="flex flex-row flex-wrap items-center p-[4px] gap-2">
               <Avatar
                 className=""
                 sx={{ width: 42, height: 42 }}
-                src="https://dd.dexscreener.com/ds-data/tokens/solana/HtrpQFrrd6hefsbAMifWibPetY4Kd8pjTbX7Wxmjpump.png?size=lg&key=df2ab7"
+                src={token?.logo}
               />
-              <div className="flex flex-col">
-                <div className="text-[20px]">jailstool</div>
+              <div className="flex flex-col mix-blend-hard-light">
+                <div className="text-[20px]">{token?.symbol}</div>
                 <div className="text-[14px]">Growth：6</div>
               </div>
               <div className="flex flex-col text-[12px]">
@@ -256,7 +236,7 @@ const CustomizedContent = (props: any) => {
               </div>
             </div>
           </div>
-        </Link>
+        </div>
       </foreignObject>
     </g>
   );

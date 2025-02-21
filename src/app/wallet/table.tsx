@@ -13,7 +13,8 @@ import { BarPlot } from "@mui/x-charts/BarChart";
 import { Favorite } from "./favorite";
 import { SvgThunderboltFill, SvgWhale } from "@/assets/svg";
 import { Statistic } from "../components/statistic";
-import { formatAmount } from "../components/format";
+import { formatAddress, formatAmount } from "../components/format";
+import Link from "next/link";
 
 type Wallet = {
   address: string;
@@ -108,7 +109,7 @@ export const WalletTable = (props: Props) => {
                   paddingTop: 4,
                   paddingBottom: 4,
                 }}>
-                <WalletCell />
+                <WalletCell wallet={wallet} />
               </TableCell>
               <TableCell
                 className="rounded-s-[10px]"
@@ -171,8 +172,10 @@ export const WalletTable = (props: Props) => {
   );
 };
 
-type WalletCellProps = {};
-const WalletCell = ({}: WalletCellProps) => {
+type WalletCellProps = {
+    wallet: Wallet;
+};
+const WalletCell = ({wallet}: WalletCellProps) => {
   return (
     <div className="relative">
       <Favorite
@@ -180,13 +183,13 @@ const WalletCell = ({}: WalletCellProps) => {
         className=" absolute left-[-14px] h-full flex flex-col items-center justify-center"
       />
       <div className="flex flex-col px-1">
-        <div className="flex flex-row items-center gap-2">
-          <div className="text-[16px]">33t8j...zLE</div>
+        <Link href={`/watch-list/${wallet.address}`} className="flex flex-row items-center gap-2">
+          <div className="text-[16px]">{formatAddress(wallet.address)}</div>
           <div className="flex flex-row items-center gap-2">
             <SvgWhale />
             <SvgThunderboltFill />
           </div>
-        </div>
+        </Link>
         <div className="flex flex-row items-center ">
           <AvatarGroup>
             <Avatar sx={{ width: 18, height: 18 }} src="/images/avatar/1.png" />
@@ -208,7 +211,7 @@ const PNLCell = (props: any) => {
         value={999999}
         algin="justify-end"
         decimal={9}
-        format={(value) => formatAmount(value, "$")}
+        format={(value) => formatAmount(value, 2, "$")}
         showRate={false}
       />
     </div>

@@ -11,7 +11,7 @@ import {
 import { SvgCopy } from "@/assets/svg";
 import { Statistic } from "../components/statistic";
 import { formatAddress, formatAmount } from "../components/format";
-import rankJson from "./rank-data.json";
+import rankJson from "../token/rank-data.json";
 import shuffle from "lodash.shuffle";
 import { animated, useTransition } from "@react-spring/web";
 

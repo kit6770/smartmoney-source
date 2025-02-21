@@ -20,6 +20,8 @@
     "@react-spring/web": "^9.7.5",
     "@tailwindcss/postcss": "latest",
     "classnames": "latest",
+    "copy-to-clipboard": "^3.3.3",
+    "dayjs": "^1.11.13",
     "decimal.js": "^10.5.0",
     "gh-pages": "latest",
     "lodash.shuffle": "^4.2.0",

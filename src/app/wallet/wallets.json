@@ -1,0 +1,582 @@
+{
+    "code": 0,
+    "msg": "success",
+    "data": {
+        "rank": [
+            {
+                "wallet_address": "3m213yY4n12wuY8P3L5nRDy5erkCibhkz9fbQDQ4Nuz7",
+                "address": "3m213yY4n12wuY8P3L5nRDy5erkCibhkz9fbQDQ4Nuz7",
+                "realized_profit": 19391.745932414124,
+                "buy": 0,
+                "sell": 3,
+                "last_active": 1739733650,
+                "realized_profit_1d": 0,
+                "realized_profit_7d": 12.71861807979,
+                "realized_profit_30d": -0.06341337515,
+                "pnl_30d": -0.0018577833456229276,
+                "pnl_7d": 1.4337289457125832,
+                "pnl_1d": null,
+                "txs_30d": 14,
+                "buy_30d": 0,
+                "sell_30d": 14,
+                "balance": 0.00750061,
+                "eth_balance": 0.00750061,
+                "sol_balance": 0.00750061,
+                "trx_balance": 0.00750061,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "smart_degen": 32
+                },
+                "nickname": null,
+                "tags": [
+                    "smart_degen"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.3333333333333333,
+                "avg_cost_7d": 2.9570019999999997,
+                "pnl_lt_minus_dot5_num_7d": 0,
+                "pnl_minus_dot5_0x_num_7d": 2,
+                "pnl_lt_2x_num_7d": 0,
+                "pnl_2x_5x_num_7d": 0,
+                "pnl_gt_5x_num_7d": 1,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0.3333333333333333,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.6666666666666666,
+                "pnl_lt_2x_num_7d_ratio": 0,
+                "pnl_2x_5x_num_7d_ratio": 0,
+                "pnl_gt_5x_num_7d_ratio": 0.3333333333333333,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 12.71861807979
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "3",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "2",
+                    "no_buy_hold_ratio": 0.4,
+                    "sell_pass_buy": "0",
+                    "sell_pass_buy_ratio": 0,
+                    "fast_tx": "0",
+                    "fast_tx_ratio": 0
+                },
+                "txs": 3,
+                "token_num_7d": 3,
+                "avg_holding_period_7d": 24671800.333333332
+            },
+            {
+                "wallet_address": "DfMxre4cKmvogbLrPigxmibVTTQDuzjdXojWzjCXXhzj",
+                "address": "DfMxre4cKmvogbLrPigxmibVTTQDuzjdXojWzjCXXhzj",
+                "realized_profit": 1402757.4090517387,
+                "buy": 693,
+                "sell": 567,
+                "last_active": 1740029950,
+                "realized_profit_1d": 65055.02960247682,
+                "realized_profit_7d": 219738.08801619514,
+                "realized_profit_30d": 1402757.4090517387,
+                "pnl_30d": 0.6195794534265552,
+                "pnl_7d": 0.5899845509696952,
+                "pnl_1d": 0.8318835061419942,
+                "txs_30d": 5385,
+                "buy_30d": 2541,
+                "sell_30d": 2844,
+                "balance": 3600.835580285,
+                "eth_balance": 3600.835580285,
+                "sol_balance": 3600.835580285,
+                "trx_balance": 3600.835580285,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "pump_smart": 1,
+                    "smart_degen": 1
+                },
+                "nickname": null,
+                "tags": [
+                    "smart_degen",
+                    "pump_smart"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.8461538461538461,
+                "avg_cost_7d": 892.4966282154656,
+                "pnl_lt_minus_dot5_num_7d": 4,
+                "pnl_minus_dot5_0x_num_7d": 37,
+                "pnl_lt_2x_num_7d": 269,
+                "pnl_2x_5x_num_7d": 26,
+                "pnl_gt_5x_num_7d": 2,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0.005917159763313609,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.10946745562130178,
+                "pnl_lt_2x_num_7d_ratio": 0.7958579881656804,
+                "pnl_2x_5x_num_7d_ratio": 0.07692307692307693,
+                "pnl_gt_5x_num_7d_ratio": 0.005917159763313609,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": 21521.00073890004
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 24410.523015236817
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": 18940.168730631663
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 39421.80952825678
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 20120.74744848561
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 51273.84383661942
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "350",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "288",
+                    "no_buy_hold_ratio": 0.45141065830721006,
+                    "sell_pass_buy": "27",
+                    "sell_pass_buy_ratio": 0.07714285714285714,
+                    "fast_tx": "85",
+                    "fast_tx_ratio": 0.24285714285714285
+                },
+                "txs": 1260,
+                "token_num_7d": 338,
+                "avg_holding_period_7d": 124053.92
+            },
+            {
+                "wallet_address": "EDozia8CitSkQCnpXu3ekLJCoiLvPUWWLgiRTKiES2j2",
+                "address": "EDozia8CitSkQCnpXu3ekLJCoiLvPUWWLgiRTKiES2j2",
+                "realized_profit": 225218.314335894,
+                "buy": 18,
+                "sell": 17,
+                "last_active": 1740042654,
+                "realized_profit_1d": 1106.69564145549,
+                "realized_profit_7d": 1581.51737464354,
+                "realized_profit_30d": 34883.33310183638,
+                "pnl_30d": 0.2701718332341195,
+                "pnl_7d": 0.5231832939337114,
+                "pnl_1d": 0.8103360087808583,
+                "txs_30d": 447,
+                "buy_30d": 213,
+                "sell_30d": 234,
+                "balance": 236.242767714,
+                "eth_balance": 236.242767714,
+                "sol_balance": 236.242767714,
+                "trx_balance": 236.242767714,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "pump_smart": 9
+                },
+                "nickname": null,
+                "tags": [
+                    "pump_smart"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.5,
+                "avg_cost_7d": 197.7995698395988,
+                "pnl_lt_minus_dot5_num_7d": 1,
+                "pnl_minus_dot5_0x_num_7d": 8,
+                "pnl_lt_2x_num_7d": 6,
+                "pnl_2x_5x_num_7d": 1,
+                "pnl_gt_5x_num_7d": 1,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0.058823529411764705,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.47058823529411764,
+                "pnl_lt_2x_num_7d_ratio": 0.35294117647058826,
+                "pnl_2x_5x_num_7d_ratio": 0.058823529411764705,
+                "pnl_gt_5x_num_7d_ratio": 0.058823529411764705,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": 46.89058600786
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 0
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 73.04067463859
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 354.8904725416
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "16",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "1",
+                    "no_buy_hold_ratio": 0.058823529411764705,
+                    "sell_pass_buy": "0",
+                    "sell_pass_buy_ratio": 0,
+                    "fast_tx": "0",
+                    "fast_tx_ratio": 0
+                },
+                "txs": 35,
+                "token_num_7d": 17,
+                "avg_holding_period_7d": 3294.705882352941
+            },
+            {
+                "wallet_address": "HXkaN7TAQYXsybY1UHLrn18cVa9jgM3mbReasbAoSjTv",
+                "address": "HXkaN7TAQYXsybY1UHLrn18cVa9jgM3mbReasbAoSjTv",
+                "realized_profit": 1323269.8739387395,
+                "buy": 166,
+                "sell": 150,
+                "last_active": 1740024754,
+                "realized_profit_1d": 3135.488703609299,
+                "realized_profit_7d": 45893.88737479645,
+                "realized_profit_30d": 278194.8991478132,
+                "pnl_30d": 0.5204863677518612,
+                "pnl_7d": 0.4353900728928778,
+                "pnl_1d": 0.8493026174911366,
+                "txs_30d": 2159,
+                "buy_30d": 1135,
+                "sell_30d": 1024,
+                "balance": 50.053429484,
+                "eth_balance": 50.053429484,
+                "sol_balance": 50.053429484,
+                "trx_balance": 50.053429484,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "pump_smart": 4
+                },
+                "nickname": null,
+                "tags": [
+                    "pump_smart"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.7540983606557377,
+                "avg_cost_7d": 1116.6498199009127,
+                "pnl_lt_minus_dot5_num_7d": 16,
+                "pnl_minus_dot5_0x_num_7d": 10,
+                "pnl_lt_2x_num_7d": 42,
+                "pnl_2x_5x_num_7d": 4,
+                "pnl_gt_5x_num_7d": 2,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0.02702702702702703,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.13513513513513514,
+                "pnl_lt_2x_num_7d_ratio": 0.5675675675675675,
+                "pnl_2x_5x_num_7d_ratio": 0.05405405405405406,
+                "pnl_gt_5x_num_7d_ratio": 0.02702702702702703,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": 9552.578703664209
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 10452.635012253471
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": 13364.026064880807
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 583.8451114192516
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 3554.4901572521776
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 1780.499492191419
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "120",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "3",
+                    "no_buy_hold_ratio": 0.024390243902439025,
+                    "sell_pass_buy": "1",
+                    "sell_pass_buy_ratio": 0.008333333333333333,
+                    "fast_tx": "31",
+                    "fast_tx_ratio": 0.25833333333333336
+                },
+                "txs": 316,
+                "token_num_7d": 74,
+                "avg_holding_period_7d": 101665.89795918367
+            },
+            {
+                "wallet_address": "72e6QM7gn9MH5u1YpgQbduexm4WAon1cnsSXPqKnLQec",
+                "address": "72e6QM7gn9MH5u1YpgQbduexm4WAon1cnsSXPqKnLQec",
+                "realized_profit": 1642653.453787924,
+                "buy": 58,
+                "sell": 64,
+                "last_active": 1740015231,
+                "realized_profit_1d": 2775.02395050084,
+                "realized_profit_7d": 19085.55012343871,
+                "realized_profit_30d": 358370.5087438724,
+                "pnl_30d": 0.49987872067232675,
+                "pnl_7d": 0.27593467221108675,
+                "pnl_1d": 0.3084954703318969,
+                "txs_30d": 1091,
+                "buy_30d": 528,
+                "sell_30d": 563,
+                "balance": 368.081789567,
+                "eth_balance": 368.081789567,
+                "sol_balance": 368.081789567,
+                "trx_balance": 368.081789567,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "pump_smart": 6
+                },
+                "nickname": null,
+                "tags": [
+                    "pump_smart"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.6938775510204082,
+                "avg_cost_7d": 1337.249437391799,
+                "pnl_lt_minus_dot5_num_7d": 2,
+                "pnl_minus_dot5_0x_num_7d": 12,
+                "pnl_lt_2x_num_7d": 34,
+                "pnl_2x_5x_num_7d": 1,
+                "pnl_gt_5x_num_7d": 0,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.24489795918367346,
+                "pnl_lt_2x_num_7d_ratio": 0.6938775510204082,
+                "pnl_2x_5x_num_7d_ratio": 0.02040816326530612,
+                "pnl_gt_5x_num_7d_ratio": 0,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": 797.55293491515
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 6573.84751635846
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": 3597.16735694308
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 1500.30215553665
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 1588.81572621022
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 4759.53631140883
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "51",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "23",
+                    "no_buy_hold_ratio": 0.3108108108108108,
+                    "sell_pass_buy": "1",
+                    "sell_pass_buy_ratio": 0.0196078431372549,
+                    "fast_tx": "18",
+                    "fast_tx_ratio": 0.35294117647058826
+                },
+                "txs": 122,
+                "token_num_7d": 49,
+                "avg_holding_period_7d": 37.895833333333336
+            },
+            {
+                "wallet_address": "Hnnw2hAgPgGiFKouRWvM3fSk3HnYgRv4Xq1PjUEBEuWM",
+                "address": "Hnnw2hAgPgGiFKouRWvM3fSk3HnYgRv4Xq1PjUEBEuWM",
+                "realized_profit": 1905400.2272204976,
+                "buy": 80,
+                "sell": 81,
+                "last_active": 1739915582,
+                "realized_profit_1d": -146.752843069,
+                "realized_profit_7d": 8699.897652010854,
+                "realized_profit_30d": 319676.3732247038,
+                "pnl_30d": 0.5870851050475862,
+                "pnl_7d": 0.2717798063133236,
+                "pnl_1d": -0.17867121788979967,
+                "txs_30d": 2194,
+                "buy_30d": 1039,
+                "sell_30d": 1155,
+                "balance": 52.426899232,
+                "eth_balance": 52.426899232,
+                "sol_balance": 52.426899232,
+                "trx_balance": 52.426899232,
+                "twitter_username": null,
+                "avatar": null,
+                "ens": null,
+                "tag": null,
+                "tag_rank": {
+                    "pump_smart": 2,
+                    "smart_degen": 2
+                },
+                "nickname": null,
+                "tags": [
+                    "smart_degen",
+                    "pump_smart"
+                ],
+                "twitter_name": null,
+                "followers_count": 0,
+                "is_blue_verified": false,
+                "twitter_description": null,
+                "name": null,
+                "avg_hold_time": 0,
+                "recent_buy_tokens": [],
+                "winrate_7d": 0.532258064516129,
+                "avg_cost_7d": 433.5850574905586,
+                "pnl_lt_minus_dot5_num_7d": 5,
+                "pnl_minus_dot5_0x_num_7d": 22,
+                "pnl_lt_2x_num_7d": 29,
+                "pnl_2x_5x_num_7d": 6,
+                "pnl_gt_5x_num_7d": 0,
+                "pnl_lt_minus_dot5_num_7d_ratio": 0,
+                "pnl_minus_dot5_0x_num_7d_ratio": 0.3548387096774194,
+                "pnl_lt_2x_num_7d_ratio": 0.46774193548387094,
+                "pnl_2x_5x_num_7d_ratio": 0.0967741935483871,
+                "pnl_gt_5x_num_7d_ratio": 0,
+                "daily_profit_7d": [
+                    {
+                        "timestamp": 1739404800,
+                        "profit": -486.63584770093
+                    },
+                    {
+                        "timestamp": 1739491200,
+                        "profit": 4015.9172830147145
+                    },
+                    {
+                        "timestamp": 1739577600,
+                        "profit": -104.0749565793
+                    },
+                    {
+                        "timestamp": 1739664000,
+                        "profit": 2655.8632925926736
+                    },
+                    {
+                        "timestamp": 1739750400,
+                        "profit": 1588.404523797008
+                    },
+                    {
+                        "timestamp": 1739836800,
+                        "profit": 1504.2116762197572
+                    },
+                    {
+                        "timestamp": 1739923200,
+                        "profit": 0
+                    }
+                ],
+                "risk": {
+                    "token_active": "72",
+                    "token_honeypot": "0",
+                    "token_honeypot_ratio": 0,
+                    "no_buy_hold": "23",
+                    "no_buy_hold_ratio": 0.24210526315789474,
+                    "sell_pass_buy": "2",
+                    "sell_pass_buy_ratio": 0.027777777777777776,
+                    "fast_tx": "14",
+                    "fast_tx_ratio": 0.19444444444444445
+                },
+                "txs": 161,
+                "token_num_7d": 62,
+                "avg_holding_period_7d": 721.125
+            }
+        ]
+    }
+}

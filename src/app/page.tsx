@@ -12,6 +12,7 @@ import { TreeMapChart } from './chart'
 import { WalletList } from './wallet-list'
 import { PNLProfileCell } from './wallet/table'
 import { TopRank } from './wallet/top-rank'
+import { TokenDrawer } from './token/drawer'
 
 const darkTheme = createTheme({
   palette: {
@@ -54,6 +55,7 @@ export default function Home() {
               <TopRank />
             </div>
           </div>
+          <TokenDrawer />
         </main>
       </ThemeProvider>
     </GlobalContextProvider>

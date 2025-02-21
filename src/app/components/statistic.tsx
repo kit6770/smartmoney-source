@@ -8,6 +8,7 @@ type Props = {
   decimal?: number
   algin?: string
   showNumber?: boolean
+  className?: string
   format?: (value: number) => React.ReactNode
 }
 
@@ -32,14 +33,14 @@ export const parseValue = (
     }
   } else if (value > 0) {
     return {
-      color: '#00B953',
+      color: '#2DC24E',
       value: '+' + value?.toFixed(decimal),
       sign: '+',
       // icon: <TriangleUp size="xs" fill="#00B953" />,
     }
   } else {
     return {
-      color: '#FF543D',
+      color: '#F92C2C',
       value: value?.toFixed(decimal),
       sign: '-',
       // icon: <TriangleDown size="xs" fill="#FF543D" style={{marginTop: 2}} />,
@@ -55,10 +56,11 @@ export function Statistic({
   algin = 'justify-start',
   showRate = true,
   showNumber,
+  className
 }: Props) {
   const result = parseValue(value, showNumber, decimal)
   return (
-    <div className={`flex flex-row items-center gap-2 ${algin}`}>
+    <div className={`flex flex-row items-center gap-2 ${algin} ${className}`}>
       {/* {showIcon && result.icon} */}
       <div
         className='flex flex-row items-center'

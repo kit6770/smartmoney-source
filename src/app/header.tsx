@@ -10,7 +10,7 @@ type Props = {};
 export const Header = (props: Props) => {
   const pathname = usePathname()
   return (
-    <header className="">
+    <header className="w-[100vw]">
       <div className="flex flex-row items-center justify-between p-[20px]">
         <div className="flex items-center gap-2">
           <Image
