@@ -7,7 +7,7 @@ import {
   TableRow,
 } from "@mui/material";
 import Table from "@mui/material/Table";
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { ChartContainer } from "@mui/x-charts/ChartContainer";
 import { BarPlot } from "@mui/x-charts/BarChart";
 import { Favorite } from "./favorite";
@@ -15,9 +15,18 @@ import { SvgThunderboltFill, SvgWhale } from "@/assets/svg";
 import { Statistic } from "../components/statistic";
 import { formatAddress, formatAmount } from "../components/format";
 import Link from "next/link";
+import { useInView } from "@react-spring/web";
+import useSWRMutation from "swr/mutation";
 
 type Wallet = {
   address: string;
+  pnl_1d: string;
+  pnl_1d_sol: string
+  pnl_7d: string;
+  pnl_7d_sol: string
+  pnl_30d: string;
+  pnl_30d_sol: string
+  winning_rate_7d: number
 };
 
 type Props = {
@@ -25,6 +34,35 @@ type Props = {
 };
 
 export const WalletTable = (props: Props) => {
+    const [data, setData] = useState<string[]>([]);
+  const [page, setPage] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(true);
+  
+
+  // 使用 Intersection Observer 检测底部元素是否进入视口
+  const { ref, inView } = useInView();
+
+  // 加载更多数据
+  const loadMoreData = useCallback(async () => {
+    if (loading || !hasMore) return;
+    setLoading(true);
+    const newData = await fetchData(page);
+    if (newData.length === 0) {
+      setHasMore(false); // 如果没有更多数据，停止加载
+    } else {
+      setData((prev) => [...prev, ...newData]);
+      setPage((prev) => prev + 1);
+    }
+    setLoading(false);
+  }, [page, loading, hasMore]);
+
+  // 当底部元素进入视口时，触发加载更多数据
+  useEffect(() => {
+    if (inView && hasMore) {
+      loadMoreData();
+    }
+  }, [inView, hasMore, loadMoreData]);
   const { wallets } = props;
   return (
     <Table>
@@ -98,7 +136,7 @@ export const WalletTable = (props: Props) => {
         </TableRow>
       </TableHead>
       <TableBody>
-        {wallets.map((wallet) => {
+        {wallets?.map((wallet) => {
           return (
             <TableRow key={wallet.address}>
               <TableCell
@@ -119,7 +157,7 @@ export const WalletTable = (props: Props) => {
                   paddingTop: 4,
                   paddingBottom: 4,
                 }}>
-                <PNLCell />
+                <PNLCell rate={wallet.pnl_1d} value={wallet.pnl_1d_sol} />
               </TableCell>
               <TableCell
                 className="rounded-s-[10px]"
@@ -129,7 +167,7 @@ export const WalletTable = (props: Props) => {
                   paddingTop: 4,
                   paddingBottom: 4,
                 }}>
-                <PNLCell />
+                <PNLCell rate={wallet.pnl_7d}  value={wallet.pnl_7d_sol} />
               </TableCell>
               <TableCell
                 align="center"
@@ -140,7 +178,7 @@ export const WalletTable = (props: Props) => {
                   paddingTop: 4,
                   paddingBottom: 4,
                 }}>
-                80%
+                {wallet?.winning_rate_7d}
               </TableCell>
               <TableCell
                 align="center"
@@ -183,7 +221,7 @@ const WalletCell = ({wallet}: WalletCellProps) => {
         className=" absolute left-[-14px] h-full flex flex-col items-center justify-center"
       />
       <div className="flex flex-col px-1">
-        <Link href={`/watch-list/${wallet.address}`} className="flex flex-row items-center gap-2">
+        <Link href={`/wallet/${wallet.address}`} className="flex flex-row items-center gap-2">
           <div className="text-[16px]">{formatAddress(wallet.address)}</div>
           <div className="flex flex-row items-center gap-2">
             <SvgWhale />
@@ -203,15 +241,19 @@ const WalletCell = ({wallet}: WalletCellProps) => {
   );
 };
 
-const PNLCell = (props: any) => {
+type PNLProps = {
+    rate: string;
+    value: string;
+}
+
+const PNLCell = ({rate, value}: PNLProps) => {
   return (
     <div className="flex flex-col">
-      <Statistic value={99} algin="justify-end" />
+      <Statistic value={+rate} algin="justify-end" />
       <Statistic
-        value={999999}
+        value={+value}
         algin="justify-end"
-        decimal={9}
-        format={(value) => formatAmount(value, 2, "$")}
+        prefix="SOL"
         showRate={false}
       />
     </div>

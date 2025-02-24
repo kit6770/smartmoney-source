@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import copy from 'copy-to-clipboard'
 import { SvgCopy } from '@/assets/svg'

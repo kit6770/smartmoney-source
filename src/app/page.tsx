@@ -25,7 +25,7 @@ export default function Home() {
       <ThemeProvider theme={darkTheme}>
         <main className='h-screen bg-black text-white'>
           <Header />
-          <div className='flex flex-row gap-[10px] px-[10px]'>
+          <div className='flex flex-row justify-center gap-[10px] px-[10px]'>
             <div className="w-[260px] bg-[#18181B] text-white p-4 rounded-[14px]" style={{
                   height: 'calc(-96px + 100vh)',
                   overflow: 'hidden auto',
