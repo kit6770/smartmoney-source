@@ -12,7 +12,7 @@ import { SvgCopy } from "@/assets/svg";
 import { Statistic } from "../components/statistic";
 import { formatAddress, formatAmount } from "../components/format";
 import rankJson from "../token/rank-data.json";
-import shuffle from "lodash.shuffle";
+// import shuffle from "lodash.shuffle";
 import { animated, useTransition } from "@react-spring/web";
 
 type Props = {};
@@ -21,8 +21,8 @@ export const TopRank = (props: Props) => {
   const [tab, setTab] = React.useState("capital_flow");
   const [rows, set] = React.useState(rankJson.data.rank);
   React.useEffect(() => {
-    const t = setInterval(() => set(shuffle), 10000);
-    return () => clearInterval(t);
+    // const t = setInterval(() => set(shuffle), 10000);
+    // return () => clearInterval(t);
   }, []);
 
   let height = 0;
@@ -95,9 +95,9 @@ export const TopRank = (props: Props) => {
         </TableHead>
         <TableBody style={{ height, position: "relative" }}>
           {transitions((style, item, t, index) => (
-            <animated.div
-              className={"absolute"}
-              style={{ zIndex: index, ...style, height: 49 }}>
+            // <animated.div
+            //   className={"absolute"}
+            //   style={{ zIndex: index, ...style, height: 49 }}>
               <TableRow
                 key={item.address}
                 sx={{
@@ -125,7 +125,7 @@ export const TopRank = (props: Props) => {
                   <div className="flex flex-col">
                     <Statistic
                       value={3384000}
-                      format={(value) => formatAmount(value, "$")}
+                      format={(value) => formatAmount(value, 2, "$")}
                       showRate={false}
                       algin="justify-end"
                     />
@@ -136,7 +136,7 @@ export const TopRank = (props: Props) => {
                   <div className="flex flex-row"></div>
                 </TableCell>
               </TableRow>
-            </animated.div>
+            // </animated.div>
           ))}
           {/* {rankJson.data.rank.map((r) => {
             return (

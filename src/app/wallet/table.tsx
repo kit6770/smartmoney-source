@@ -15,7 +15,6 @@ import { SvgThunderboltFill, SvgWhale } from "@/assets/svg";
 import { Statistic } from "../components/statistic";
 import { formatAddress, formatAmount } from "../components/format";
 import Link from "next/link";
-import { useInView } from "@react-spring/web";
 import useSWRMutation from "swr/mutation";
 
 type Wallet = {
@@ -41,28 +40,28 @@ export const WalletTable = (props: Props) => {
   
 
   // 使用 Intersection Observer 检测底部元素是否进入视口
-  const { ref, inView } = useInView();
+//   const { ref, inView } = useInView();
 
   // 加载更多数据
-  const loadMoreData = useCallback(async () => {
-    if (loading || !hasMore) return;
-    setLoading(true);
-    const newData = await fetchData(page);
-    if (newData.length === 0) {
-      setHasMore(false); // 如果没有更多数据，停止加载
-    } else {
-      setData((prev) => [...prev, ...newData]);
-      setPage((prev) => prev + 1);
-    }
-    setLoading(false);
-  }, [page, loading, hasMore]);
+//   const loadMoreData = useCallback(async () => {
+//     if (loading || !hasMore) return;
+//     setLoading(true);
+//     const newData = await fetchData(page);
+//     if (newData.length === 0) {
+//       setHasMore(false); // 如果没有更多数据，停止加载
+//     } else {
+//       setData((prev) => [...prev, ...newData]);
+//       setPage((prev) => prev + 1);
+//     }
+//     setLoading(false);
+//   }, [page, loading, hasMore]);
 
   // 当底部元素进入视口时，触发加载更多数据
-  useEffect(() => {
-    if (inView && hasMore) {
-      loadMoreData();
-    }
-  }, [inView, hasMore, loadMoreData]);
+//   useEffect(() => {
+//     if (inView && hasMore) {
+//       loadMoreData();
+//     }
+//   }, [inView, hasMore, loadMoreData]);
   const { wallets } = props;
   return (
     <Table>
