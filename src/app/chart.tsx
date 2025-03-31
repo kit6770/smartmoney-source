@@ -207,15 +207,15 @@ const CustomizedContent = (props: any) => {
       />
 
       <foreignObject x={x} y={y} width={width} height={height}>
-        {/* <div className=" absolute top-0 bottom-0 left-0 right-0 opacity-80" style={{
+        <div className=" absolute top-0 bottom-0 left-0 right-0 opacity-80" style={{
             backgroundImage: `url(${token?.logo})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
-            opacity:0.3
+            // opacity:0.3
         }} onClick={()=>{
           emitter.emit('openTokenDrawer', {token})
-        }}/> */}
+        }}/>
         <div className="w-full h-full cursor-pointer" onClick={()=>{
           emitter.emit('openTokenDrawer', {token})
         }} >
